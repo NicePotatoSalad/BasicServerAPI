@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-color: #1d1d1d;
+  font-family: sans-serif;
+}
+
+button {
+  padding: 24px 48px;
+  font-size: 1rem;
+  background-color: #5025ff;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 30px
+}
+
+button:hover {
+  background-color: #0056b3;
+}
