@@ -1,4 +1,5 @@
 using System.Numerics;
+using backend_api.Handlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,6 @@ var app = builder.Build();
 
 app.UseCors("AllowAll");
 
-app.MapGet("/testapi", () => Results.Ok(new {message = "Backend received your click! 200 OK"}));
+app.MapGet("/testapi", TestApiHandler.GetMessage);
 
 app.Run();
